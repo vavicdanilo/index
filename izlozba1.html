@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ema Antoniuoli</title>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        font-family: 'Arial', sans-serif;
+        background-color: white; /* Nježnija boja pozadine */
+    }
+    #preloader {
+        background: url('https://lh3.googleusercontent.com/proxy/eMwxTHSvhz7F9ugusG_nGf0oB5okjTn4Jk5eYUypEJb07z1fkcDjbjRwaEPOZFngZHdWMNZswtQm29wCWITMBP_wYolg3xXW5ClMz8xjYyLgSHmz_FicR0-ekLFK') no-repeat center center;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        padding: 20px;
+        height: 100%;
+        box-sizing: border-box;
+        color:white;
+        z-index: 1001;
+}
+      
+    
+    .content {
+        display: none;
+        text-align: center;
+        padding: 20px;
+        height: 100%;
+        box-sizing: border-box;
+        color: #333;
+    }
+    h1 {
+        color: #5a5a66;
+        font-family: 'Lobster', cursive; /* Lepši font */
+        font-style: italic;
+        animation: fadeIn 3s ease-in-out; /* Animacija za naslov */
+    }
+    p, iframe {
+        max-width: 90%;
+        margin: auto;
+    }
+    iframe {
+        width: 90%;
+        height: 240px;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+<script>
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        document.getElementById('preloader').style.display = 'none';
+        document.querySelector('.content').style.display = 'block';
+    }, 2000);
+});
+</script>
+</head>
+<body>
+<div id="preloader"></div>
+<div class="content">
+    <h1>Ema Antoniuoli</h1>
+    <p>Dobrodošli na moj lični veb-sajt. Ovo je mesto gde možete saznati više o mojim projektima i interesovanjima. Uvek težim ka inovacijama i kreiranju kreativnih rešenja. Nadam se da ćete uživati pregledajući moje radove. Zahvaljujem se što ste posetili i radujem se vašim povratnim informacijama.</p>
+    <iframe src="https://www.youtube.com/embed/Behl0fsX0dQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</body>
+</html>
