@@ -1,25 +1,97 @@
 <!doctype html>
 <html lang="sr-Latn">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Upoznajte CNC lasersku mašinu — od preciznog laserskog rada do svakog dijela sistema.">
-<title>CNC / Preciznost u svakom detalju</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#151619">
+<meta name="description" content="CNC mašina. Laser izbliza. Svaki dio sistema. Tri pogleda na preciznost.">
+<title>CNC — Tri pogleda. Jedna mašina.</title>
 <style>
-:root{--paper:#f5f5f1;--ink:#182329;--muted:#687279;--blue:#1853dc;--line:#daddd8}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}header{height:86px;display:flex;align-items:center;justify-content:space-between;padding:0 5%;border-bottom:1px solid var(--line);background:var(--paper);position:sticky;top:0;z-index:10}.logo{font-size:27px;font-weight:900;letter-spacing:-2px}.logo span{color:var(--blue)}nav{display:flex;gap:32px;font-size:12px;font-weight:600}nav a{padding:10px 0}nav a:hover,nav a.active{color:var(--blue)}.header-note{font:10px monospace;letter-spacing:1px;color:var(--muted)}main{max-width:1800px;margin:auto}.hero{padding:64px 5% 0}.eyebrow{font:11px monospace;letter-spacing:2px;text-transform:uppercase;display:flex;gap:12px;align-items:center}.dot{height:7px;width:7px;background:var(--blue);display:inline-block;border-radius:50%}.hero-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;margin:25px 0 36px}h1{font-size:clamp(48px,6.3vw,100px);line-height:.99;letter-spacing:-5px;font-weight:500;margin:0}h1 em{font-style:normal;color:var(--blue)}.intro{max-width:275px;font-size:14px;line-height:1.7;color:var(--muted);margin:0 0 6px}.visual{position:relative;overflow:hidden;background:#25272b;border-radius:3px}.hero .visual{height:clamp(320px,41vw,660px)}.visual img,.visual video{width:100%;height:100%;object-fit:cover;display:block}.visual-caption{position:absolute;top:22px;left:24px;display:flex;align-items:center;gap:9px;color:#fff;font:10px monospace;letter-spacing:1.5px}.visual-caption:before{content:'';width:5px;height:5px;background:#92b5ff;border-radius:50%}.image-index{position:absolute;right:25px;top:22px;color:#c7cbd0;font:11px monospace}.hero-bottom{display:flex;justify-content:space-between;padding:18px 0;font:10px monospace;letter-spacing:1px;color:var(--muted)}.scroll{color:var(--ink)}.section{padding:105px 5% 0}.section-head{display:grid;grid-template-columns:1fr 2fr 1fr;gap:30px;align-items:start;margin-bottom:35px}.section-number{font:12px monospace;color:var(--blue);letter-spacing:1px;padding-top:9px}h2{font-size:clamp(36px,4vw,62px);font-weight:500;line-height:1.04;letter-spacing:-2.5px;margin:0}.section-head p{font-size:13px;line-height:1.7;color:var(--muted);margin:4px 0}.laser-layout{display:grid;grid-template-columns:2.25fr 1fr;gap:22px}.laser-layout .visual{aspect-ratio:16/10}.detail-panel{background:#e9ece6;border-radius:3px;padding:34px;display:flex;flex-direction:column;justify-content:space-between}.cross{color:var(--blue);font-size:62px;font-weight:200;line-height:1}.detail-panel h3{font-size:26px;line-height:1.15;font-weight:500;letter-spacing:-1px;margin:25px 0 15px}.detail-panel p{font-size:13px;line-height:1.7;color:var(--muted)}.tag{border-top:1px solid #cbd0c7;padding-top:18px;font:10px monospace;letter-spacing:1px}.play{position:absolute;bottom:20px;left:24px;color:white;border:1px solid #ffffff50;border-radius:30px;padding:10px 16px;background:#15191c80;font:11px Arial;cursor:pointer}.play:hover{background:var(--blue)}.parts .visual{aspect-ratio:16/8.6}.parts .visual img{object-fit:contain}.parts-notes{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line)}.part-note{padding:25px 25px 25px 0;display:flex;gap:15px}.part-note span{font:10px monospace;color:var(--blue);padding-top:4px}.part-note h3{font-size:14px;font-weight:500;margin:0 0 8px}.part-note p{font-size:12px;color:var(--muted);margin:0;line-height:1.5}footer{padding:65px 5% 30px;display:flex;justify-content:space-between;align-items:center}footer p{font:10px monospace;color:var(--muted)}.back{font-size:12px}.reveal{animation:appear .7s ease both}@keyframes appear{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}a:focus-visible,button:focus-visible{outline:3px solid #6a92ff;outline-offset:5px}@media(min-width:1500px){.hero-heading{margin-top:35px}}@media(max-width:760px){header{height:72px}.header-note{display:none}nav{gap:17px;font-size:11px}.hero{padding-top:40px}.hero-heading{display:block}h1{letter-spacing:-2.5px}.intro{margin-top:24px;max-width:340px}.hero .visual{height:310px}.hero .visual img{object-position:50% center}.hero-bottom{font-size:8px;gap:15px}.section{padding-top:64px}.section-head{grid-template-columns:1fr;gap:14px}.section-head p{max-width:350px}.laser-layout{grid-template-columns:1fr}.detail-panel{padding:25px;gap:15px}.cross{font-size:40px}.detail-panel h3{margin:0}.parts .visual{aspect-ratio:4/3}.parts-notes{grid-template-columns:1fr}.part-note{border-top:1px solid var(--line);padding:20px 0}footer{padding-top:40px;flex-wrap:wrap;gap:20px}footer p{width:100%;order:3}.visual-caption{font-size:8px;left:16px;top:16px}.image-index{right:16px;top:16px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{animation:none}}
+:root{color-scheme:dark;--white:#f4f4f1;--blue:#8ab6ff}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-snap-type:y proximity;background:#151619}body{margin:0;color:var(--white);font-family:Arial,Helvetica,sans-serif;background:#151619}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offset:7px}.header{position:fixed;z-index:20;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:28px 4%;background:linear-gradient(#10111399,transparent)}.logo{font-size:26px;font-weight:800;letter-spacing:-1.8px}.logo span{font-weight:400;color:var(--blue);padding-left:3px}.top-label{font-size:10px;letter-spacing:2px;color:#ffffffa0}.menu{display:flex;gap:26px}.menu a{font-size:11px;letter-spacing:1px;color:#ffffff80;transition:color .3s}.menu a:hover,.menu a[aria-current]{color:white}.scene{height:100vh;height:100svh;min-height:580px;position:relative;isolation:isolate;overflow:hidden;scroll-snap-align:start;background:#202125}.media{position:absolute;inset:0;z-index:-3;will-change:transform;transform:scale(1.04);transition:transform 1.5s cubic-bezier(.2,.65,.2,1)}.scene.in-view .media{transform:scale(1)}.media img,.media video{width:100%;height:100%;display:block;object-fit:cover}.scene:after{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,#0c101535 0%,transparent 32%,#0c101515 52%,#0c1015bb 100%)}.intro-title{position:absolute;top:15%;left:4%;margin:0;font-size:clamp(54px,8.7vw,142px);line-height:.92;font-weight:400;letter-spacing:-.065em;opacity:0;transform:translateY(20px);transition:opacity 1s,transform 1s}.scene.in-view .intro-title{opacity:1;transform:none}.intro-title span{display:block;font-size:11px;line-height:1;letter-spacing:3px;margin-bottom:22px;color:#ffffffb0}.scene-copy{position:absolute;left:4%;bottom:10%;max-width:80%;opacity:0;transform:translateY(24px);transition:opacity .8s .15s,transform .8s .15s}.in-view .scene-copy{opacity:1;transform:none}.kicker{font-family:monospace;font-size:10px;letter-spacing:2px;display:flex;align-items:center;gap:10px;color:#ffffffa0;margin-bottom:17px}.kicker:before{content:'';width:5px;height:5px;border-radius:50%;background:var(--blue)}h1,h2{margin:0;font-size:clamp(42px,6vw,90px);line-height:1.02;font-weight:400;letter-spacing:-.055em}.subtitle{font-size:13px;color:#ffffffa6;line-height:1.6;margin:18px 0 0;letter-spacing:.15px}.hero-copy h1{font-size:clamp(25px,2.7vw,42px);letter-spacing:-.035em}.bottom{position:absolute;left:4%;right:4%;bottom:27px;display:flex;justify-content:space-between;align-items:center;font:9px monospace;letter-spacing:1.5px;color:#ffffff80}.next{display:flex;align-items:center;gap:15px;color:#ffffffd9}.next span{font-size:18px;transition:transform .3s}.next:hover span{transform:translateY(4px)}.pagination{position:fixed;right:24px;top:50%;transform:translateY(-50%);z-index:20;display:flex;flex-direction:column;gap:22px}.pagination a{height:24px;width:24px;display:grid;place-items:center;position:relative}.pagination a:before{content:'';height:4px;width:4px;border-radius:50%;background:#ffffff65;transition:background .3s,box-shadow .3s}.pagination a[aria-current]:before{background:white;box-shadow:0 0 0 6px #ffffff15}.pagination a[aria-current]:after{content:'';position:absolute;inset:0;border:1px solid #ffffff70;border-radius:50%}.video-control{position:absolute;right:4%;bottom:100px;border:1px solid #ffffff50;border-radius:50%;height:46px;width:46px;background:#15161940;backdrop-filter:blur(8px);display:grid;place-items:center;cursor:pointer;transition:background .3s}.video-control:hover{background:#ffffff25}.video-control svg{height:16px;width:16px;fill:currentColor}.parts .media img{object-fit:contain}.parts{background:#242528}.parts:after{background:linear-gradient(180deg,#0c101530,transparent 35%,#0c101530 65%,#0c1015c9)}.progress{position:fixed;left:0;bottom:0;height:2px;background:var(--blue);z-index:30;width:0;transition:width .12s linear}.mobile-label{display:none}@media(min-aspect-ratio:2/1){.media img,.media video{object-fit:contain}}@media(max-width:700px){.header{padding:23px 6%}.top-label{display:none}.logo{font-size:24px}.menu{gap:16px}.menu a{font-size:10px;letter-spacing:0}.scene{min-height:600px}.media img,.media video{object-fit:contain}.media{inset:80px -24% 80px}.parts .media{inset:85px -8% 120px}.parts .media img{object-fit:contain}.scene:after{background:linear-gradient(180deg,#15161900 35%,#15161910 50%,#151619e0 90%)}.intro-title{top:17%;left:6%;font-size:60px;max-width:85%}.intro-title span{font-size:9px;letter-spacing:2px;margin-bottom:17px}.scene-copy{left:6%;bottom:14%;max-width:83%}h2{font-size:50px}.hero-copy h1{font-size:28px}.subtitle{font-size:12px;max-width:240px;margin-top:12px}.pagination{right:10px;gap:14px}.bottom{left:6%;right:6%;bottom:28px;font-size:8px;letter-spacing:1px}.video-control{right:6%;bottom:15%}.kicker{font-size:9px;margin-bottom:13px}.parts .scene-copy{bottom:13%}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;scroll-snap-type:none}*,*:before,*:after{transition:none!important}.intro-title,.scene-copy{opacity:1;transform:none}.media{transform:none}}
+
+/* One pinned viewport; scrolling blends the three scenes. */
+html{scroll-snap-type:none}
+main{height:300vh;height:300svh;position:relative}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:#202125}
+.scene{position:absolute;inset:0;height:100%;min-height:0;opacity:0;pointer-events:none;will-change:opacity}
+.scene:first-child{opacity:1;pointer-events:auto}
+.scene .media,.scene.in-view .media{transition:none;transform:scale(var(--zoom,1))}
+.scene .scene-copy,.scene .intro-title{opacity:1;transform:none;transition:none}
+.scene.is-active{pointer-events:auto}
+@media(prefers-reduced-motion:reduce){.scene .media{transform:none!important}}
 </style>
 </head>
-<body id="top">
-<header><a class="logo" href="#top" aria-label="CNC početna">cnc<span> /</span></a><nav aria-label="Glavna navigacija"><a href="#masina">Mašina</a><a href="#laser">Laser u fokusu</a><a href="#dijelovi">Dijelovi</a></nav><span class="header-note">TEHNOLOGIJA U DETALJU ↗</span></header>
-<main>
-<section class="hero reveal" id="masina"><div class="eyebrow"><span class="dot"></span> CNC LASERSKA TEHNOLOGIJA</div><div class="hero-heading"><h1>Preciznost.<br>U svakom <em>detalju.</em></h1><p class="intro">Od cijele mašine do najmanje komponente. Otkrijte tehnologiju koja ideju pretvara u precizan rez.</p></div><div class="visual"><img src="assets/cnc-machine.jpg" alt="Plavo-bijela CNC laserska mašina sa otvorenim zaštitnim poklopcem" fetchpriority="high"><span class="visual-caption">CNC LASERSKI SISTEM</span><span class="image-index">01 / 03</span></div><div class="hero-bottom"><span>INŽENJERSTVO KOJE SE VIDI.</span><a class="scroll" href="#laser">ISTRAŽITE DETALJE &nbsp; ↓</a></div></section>
-<section class="section" id="laser"><div class="section-head"><span class="section-number">02 / LASER U FOKUSU</span><h2>Tamo gdje<br>nastaje preciznost.</h2><p>Pogled izbliza na lasersku glavu i radnu površinu. Svaki pokret je dio pažljivo usklađenog sistema.</p></div><div class="laser-layout"><div class="visual"><video id="laser-video" autoplay loop muted playsinline preload="auto" aria-label="Krupni kadar laserske glave CNC mašine"><source src="assets/laser-detail.mp4" type="video/mp4"></video><span class="visual-caption">POGLED IZBLIZA / VIDEO</span><button class="play" id="video-toggle" aria-label="Pauziraj video">Ⅱ &nbsp; Pauziraj</button></div><aside class="detail-panel"><span class="cross" aria-hidden="true">⌖</span><div><div class="eyebrow">DETALJ KOJI PRAVI RAZLIKU</div><h3>U središtu<br>svakog reza.</h3><p>Laserska glava, vođice i radni sto — pogledajte kako su povezani ključni elementi mašine.</p></div><div class="tag">LASERSKA GLAVA &nbsp; / &nbsp; KRUPNI KADAR</div></aside></div></section>
-<section class="section parts" id="dijelovi"><div class="section-head"><span class="section-number">03 / POGLED IZNUTRA</span><h2>Cjelina počinje<br>od svakog dijela.</h2><p>Rastavljeni prikaz otkriva slojeve mašine i komponente koje čine jedan povezan sistem.</p></div><div class="visual"><img src="assets/cnc-parts.jpg" alt="CNC mašina u rastavljenom prikazu sa komponentama raspoređenim iznad kućišta" loading="lazy"><span class="visual-caption">RASTAVLJENI PRIKAZ</span><span class="image-index">03 / 03</span></div><div class="parts-notes"><div class="part-note"><span>01</span><div><h3>Kućište i zaštita</h3><p>Spoljašnja struktura i poklopac radnog prostora.</p></div></div><div class="part-note"><span>02</span><div><h3>Laserski sistem</h3><p>Optički i mehanički elementi u središtu mašine.</p></div></div><div class="part-note"><span>03</span><div><h3>Upravljanje i pogon</h3><p>Komponente koje povezuju pokret i kontrolu.</p></div></div></div></section>
-</main><footer><a class="logo" href="#top">cnc<span> /</span></a><p>PRECIZNOST U SVAKOM DETALJU.</p><a href="#top" class="back">Povratak na vrh ↗</a></footer>
+<body>
+<header class="header"><a href="#masina" class="logo" aria-label="CNC početna">cnc<span>/</span></a><span class="top-label">TRI POGLEDA. JEDNA MAŠINA.</span><nav class="menu" aria-label="Sekcije"><a href="#masina" aria-current="location">Mašina</a><a href="#laser">Laser</a><a href="#dijelovi">Dijelovi</a></nav></header>
+<nav class="pagination" aria-label="Brza navigacija"><a href="#masina" aria-label="01 — Mašina" aria-current="location"></a><a href="#laser" aria-label="02 — Laser izbliza"></a><a href="#dijelovi" aria-label="03 — Dijelovi"></a></nav>
+<main><div class="stage">
+<section id="masina" class="scene in-view" aria-labelledby="machine-title">
+<div class="media"><img src="assets/cnc-machine.jpg" alt="CNC laserska mašina sa otvorenim plavim poklopcem" fetchpriority="high"></div>
+<p class="intro-title"><span>CNC LASERSKI SISTEM</span>Čista<br>preciznost.</p>
+<div class="scene-copy hero-copy"><div class="kicker">01 / MAŠINA</div><h1 id="machine-title">Sve počinje ovdje.</h1></div>
+<div class="bottom"><span>CNC / 01 — 03</span><a class="next" href="#laser">SKROLUJ ZA DETALJE <span aria-hidden="true">↓</span></a></div>
+</section>
+<section id="laser" class="scene" aria-labelledby="laser-title">
+<div class="media"><video id="laser-video" muted loop playsinline preload="metadata" aria-label="Video laserske glave izbliza"><source src="assets/laser-detail.mp4" type="video/mp4"></video></div>
+<div class="scene-copy"><div class="kicker">02 / LASER IZBLIZA</div><h2 id="laser-title">U samom<br>centru preciznosti.</h2><p class="subtitle">Jedan pogled bliže.</p></div>
+<button class="video-control" id="video-toggle" aria-label="Pokreni video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+<div class="bottom"><span>CNC / 02 — 03</span><a class="next" href="#dijelovi">POGLEDAJ IZNUTRA <span aria-hidden="true">↓</span></a></div>
+</section>
+<section id="dijelovi" class="scene parts" aria-labelledby="parts-title">
+<div class="media"><img src="assets/cnc-parts.jpg" alt="Rastavljena CNC mašina sa komponentama raspoređenim iznad kućišta" loading="lazy"></div>
+<div class="scene-copy"><div class="kicker">03 / DIO PO DIO</div><h2 id="parts-title">Svaki dio.<br>Jedna cjelina.</h2></div>
+<div class="bottom"><span>CNC / 03 — 03</span><a class="next" href="#masina">NA POČETAK <span aria-hidden="true">↑</span></a></div>
+</section>
+</div></main>
+<div class="progress" aria-hidden="true"></div>
 <script>
-const video=document.getElementById('laser-video'),button=document.getElementById('video-toggle');
-function sync(){button.textContent=video.paused?'▶  Pokreni':'Ⅱ  Pauziraj';button.setAttribute('aria-label',video.paused?'Pokreni video':'Pauziraj video')}
-button.addEventListener('click',()=>{if(video.paused)video.play().catch(sync);else video.pause()});video.addEventListener('play',sync);video.addEventListener('pause',sync);
-if(matchMedia('(prefers-reduced-motion: reduce)').matches)video.pause();sync();
-const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){document.querySelectorAll('nav a').forEach(a=>{const active=a.hash==='#'+entry.target.id;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')})}})},{rootMargin:'-20% 0px -45% 0px'});document.querySelectorAll('main section').forEach(s=>observer.observe(s));
+const scenes=[...document.querySelectorAll('.scene')],video=document.getElementById('laser-video'),toggle=document.getElementById('video-toggle'),reduced=matchMedia('(prefers-reduced-motion: reduce)'),links=[...document.querySelectorAll('.menu a,.pagination a')];
+let manuallyPaused=false;
+function sync(){const paused=video.paused;toggle.setAttribute('aria-label',paused?'Pokreni video':'Pauziraj video');toggle.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="'+(paused?'M8 5v14l11-7z':'M6 5h4v14H6zm8 0h4v14h-4z')+'"/></svg>'}
+function play(){video.play().catch(sync)}
+toggle.addEventListener('click',()=>{manuallyPaused=!video.paused;if(video.paused)play();else video.pause()});video.addEventListener('play',sync);video.addEventListener('pause',sync);
+let active=-1,scheduled=false;
+const progressBar=document.querySelector('.progress');
+function render(){
+ const distance=Math.max(1,document.querySelector('main').offsetHeight-innerHeight);
+ const position=Math.max(0,Math.min(2,scrollY/distance*2));
+ // Hold each view briefly, then dissolve continuously into the next.
+ const base=Math.min(1,Math.floor(position));
+ const fraction=position-base;
+ const t=Math.max(0,Math.min(1,(fraction-.2)/.6));
+ const blend=t*t*(3-2*t);
+ const current=position>=2?2:base+(blend>=.5?1:0);
+ scenes.forEach((scene,index)=>{
+  const opacity=index===base?1:index===base+1?blend:0;
+  scene.style.opacity=opacity;
+  scene.style.setProperty('--zoom',reduced.matches?'1':String(1+Math.max(0,position-index)*.055));
+  scene.classList.toggle('is-active',index===current);
+  scene.inert=index!==current;
+ });
+ if(current!==active){
+  active=current;
+  links.forEach(link=>{if(link.hash==='#'+scenes[current].id)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current')});
+  if(current===1&&!reduced.matches&&!manuallyPaused&&!document.hidden)play();else video.pause();
+ }
+ progressBar.style.width=(position/2*100)+'%';
+ scheduled=false;
+}
+function goTo(hash,smooth=true){
+ const index=scenes.findIndex(scene=>'#'+scene.id===hash);
+ if(index<0)return;
+ const distance=document.querySelector('main').offsetHeight-innerHeight;
+ scrollTo({top:distance*index/2,behavior:smooth&&!reduced.matches?'smooth':'instant'});
+}
+document.querySelectorAll('a[href^="#"]').forEach(link=>link.addEventListener('click',event=>{
+ if(!scenes.some(scene=>'#'+scene.id===link.hash))return;
+ event.preventDefault();history.replaceState(null,'',link.hash);goTo(link.hash);
+}));
+addEventListener('scroll',()=>{if(!scheduled){requestAnimationFrame(render);scheduled=true}},{passive:true});
+addEventListener('resize',render);
+addEventListener('hashchange',()=>goTo(location.hash));
+document.addEventListener('visibilitychange',()=>{if(document.hidden)video.pause();else if(active===1&&!manuallyPaused&&!reduced.matches)play()});
+addEventListener('load',()=>{if(location.hash)goTo(location.hash,false);render()});
+sync();render();
 </script>
-</body></html>
+</body>
+</html>
