@@ -1,0 +1,11 @@
+CNC SAJT — POKRETANJE
+
+1. Raspakujte cijeli preuzeti ZIP.
+2. Otvorite index.html u Chrome, Edge, Firefox ili Safari pregledacu.
+3. Skrolujte nadolje za zum na laser, odzumiranje i rastavljanje masine.
+4. Skrolujte nagore za vracanje snimka unazad i sastavljanje dijelova.
+
+Kada prestanete da skrolujete, prikaz miruje. Nema automatskog pustanja ni ponavljanja.
+Sacekajte da indikator pripreme prikaza nestane.
+Folder assets i njegov podfolder sequence moraju ostati pored index.html.
+Internet i dodatna instalacija nijesu potrebni nakon preuzimanja svih fajlova.
