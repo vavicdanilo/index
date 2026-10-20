@@ -1,88 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="sr-Latn">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ema Antoniuoli</title>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Upoznajte CNC lasersku mašinu — od preciznog laserskog rada do svakog dijela sistema.">
+<title>CNC / Preciznost u svakom detalju</title>
 <style>
-    body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        overflow: hidden;
-        font-family: 'Arial', sans-serif;
-        background-color: white; /* Nježnija boja pozadine */
-    }
-    #preloader {
-        background: url('https://lh3.googleusercontent.com/proxy/eMwxTHSvhz7F9ugusG_nGf0oB5okjTn4Jk5eYUypEJb07z1fkcDjbjRwaEPOZFngZHdWMNZswtQm29wCWITMBP_wYolg3xXW5ClMz8xjYyLgSHmz_FicR0-ekLFK') no-repeat center center;
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background-size: contain;
-        padding: 20px;
-        height: 100%;
-        box-sizing: border-box;
-        color:white;
-        z-index: 1001;
-}
-      
-    
-    .content {
-        display: none;
-        text-align: justify;
-        padding: 20px;
-        height: 100%;
-        box-sizing: border-box;
-        color: #333;
-    }
-    h1 {
-        color: #5a5a66;
-        font-family: 'Lobster', cursive; /* Lepši font */
-        font-style: italic;
-        animation: fadeIn 3s ease-in-out; /* Animacija za naslov */
-    }
-    p, iframe {
-        max-width: 90%;
-        margin: auto;
-    }
-    iframe {
-        width: 90%;
-        height: 240px;
-    }
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(-20px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
+:root{--paper:#f5f5f1;--ink:#182329;--muted:#687279;--blue:#1853dc;--line:#daddd8}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}header{height:86px;display:flex;align-items:center;justify-content:space-between;padding:0 5%;border-bottom:1px solid var(--line);background:var(--paper);position:sticky;top:0;z-index:10}.logo{font-size:27px;font-weight:900;letter-spacing:-2px}.logo span{color:var(--blue)}nav{display:flex;gap:32px;font-size:12px;font-weight:600}nav a{padding:10px 0}nav a:hover,nav a.active{color:var(--blue)}.header-note{font:10px monospace;letter-spacing:1px;color:var(--muted)}main{max-width:1800px;margin:auto}.hero{padding:64px 5% 0}.eyebrow{font:11px monospace;letter-spacing:2px;text-transform:uppercase;display:flex;gap:12px;align-items:center}.dot{height:7px;width:7px;background:var(--blue);display:inline-block;border-radius:50%}.hero-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;margin:25px 0 36px}h1{font-size:clamp(48px,6.3vw,100px);line-height:.99;letter-spacing:-5px;font-weight:500;margin:0}h1 em{font-style:normal;color:var(--blue)}.intro{max-width:275px;font-size:14px;line-height:1.7;color:var(--muted);margin:0 0 6px}.visual{position:relative;overflow:hidden;background:#25272b;border-radius:3px}.hero .visual{height:clamp(320px,41vw,660px)}.visual img,.visual video{width:100%;height:100%;object-fit:cover;display:block}.visual-caption{position:absolute;top:22px;left:24px;display:flex;align-items:center;gap:9px;color:#fff;font:10px monospace;letter-spacing:1.5px}.visual-caption:before{content:'';width:5px;height:5px;background:#92b5ff;border-radius:50%}.image-index{position:absolute;right:25px;top:22px;color:#c7cbd0;font:11px monospace}.hero-bottom{display:flex;justify-content:space-between;padding:18px 0;font:10px monospace;letter-spacing:1px;color:var(--muted)}.scroll{color:var(--ink)}.section{padding:105px 5% 0}.section-head{display:grid;grid-template-columns:1fr 2fr 1fr;gap:30px;align-items:start;margin-bottom:35px}.section-number{font:12px monospace;color:var(--blue);letter-spacing:1px;padding-top:9px}h2{font-size:clamp(36px,4vw,62px);font-weight:500;line-height:1.04;letter-spacing:-2.5px;margin:0}.section-head p{font-size:13px;line-height:1.7;color:var(--muted);margin:4px 0}.laser-layout{display:grid;grid-template-columns:2.25fr 1fr;gap:22px}.laser-layout .visual{aspect-ratio:16/10}.detail-panel{background:#e9ece6;border-radius:3px;padding:34px;display:flex;flex-direction:column;justify-content:space-between}.cross{color:var(--blue);font-size:62px;font-weight:200;line-height:1}.detail-panel h3{font-size:26px;line-height:1.15;font-weight:500;letter-spacing:-1px;margin:25px 0 15px}.detail-panel p{font-size:13px;line-height:1.7;color:var(--muted)}.tag{border-top:1px solid #cbd0c7;padding-top:18px;font:10px monospace;letter-spacing:1px}.play{position:absolute;bottom:20px;left:24px;color:white;border:1px solid #ffffff50;border-radius:30px;padding:10px 16px;background:#15191c80;font:11px Arial;cursor:pointer}.play:hover{background:var(--blue)}.parts .visual{aspect-ratio:16/8.6}.parts .visual img{object-fit:contain}.parts-notes{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line)}.part-note{padding:25px 25px 25px 0;display:flex;gap:15px}.part-note span{font:10px monospace;color:var(--blue);padding-top:4px}.part-note h3{font-size:14px;font-weight:500;margin:0 0 8px}.part-note p{font-size:12px;color:var(--muted);margin:0;line-height:1.5}footer{padding:65px 5% 30px;display:flex;justify-content:space-between;align-items:center}footer p{font:10px monospace;color:var(--muted)}.back{font-size:12px}.reveal{animation:appear .7s ease both}@keyframes appear{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}a:focus-visible,button:focus-visible{outline:3px solid #6a92ff;outline-offset:5px}@media(min-width:1500px){.hero-heading{margin-top:35px}}@media(max-width:760px){header{height:72px}.header-note{display:none}nav{gap:17px;font-size:11px}.hero{padding-top:40px}.hero-heading{display:block}h1{letter-spacing:-2.5px}.intro{margin-top:24px;max-width:340px}.hero .visual{height:310px}.hero .visual img{object-position:50% center}.hero-bottom{font-size:8px;gap:15px}.section{padding-top:64px}.section-head{grid-template-columns:1fr;gap:14px}.section-head p{max-width:350px}.laser-layout{grid-template-columns:1fr}.detail-panel{padding:25px;gap:15px}.cross{font-size:40px}.detail-panel h3{margin:0}.parts .visual{aspect-ratio:4/3}.parts-notes{grid-template-columns:1fr}.part-note{border-top:1px solid var(--line);padding:20px 0}footer{padding-top:40px;flex-wrap:wrap;gap:20px}footer p{width:100%;order:3}.visual-caption{font-size:8px;left:16px;top:16px}.image-index{right:16px;top:16px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{animation:none}}
 </style>
-<script>
-window.addEventListener('load', function() {
-    setTimeout(function() {
-        document.getElementById('preloader').style.display = 'none';
-        document.querySelector('.content').style.display = 'block';
-    }, 2000);
-});
-</script>
 </head>
-<body>
-<div id="preloader"></div>
-<div class="content">
-    <h1>Ema Antonioli</h1>
-    <p>Ema (Perica) Antonioli rođena je 3. marta 1908. godine u Šibeniku, u Hrvatskoj. Fratarsku gimnaziju završila je u Sinju, generacija 1905-1908 sa Petrom Lubardom i Milom Milunovićem. Bila je magistar farmacije a diplomu je stekla na kraljevskom Univerzitetu u Zagrebu 1939.
-        godine. Nakon završetka magisterija odlazi u Sinj i zapošljava se u ljekarni Varda. Ta apoteka je postojala do nedavno a bila je jako značajna jer je snabdijevala sa farmaceutskim sirovinama sve  apoteke od Zadra do Sremskih Karlovaca. Emin učinak je veoma značajan jer je bila izuzetno požrtvovana i savjesna u svom poslu. Učestvovala je u brojnim istrazivačkim timovima a njeni radovi su izdati, u to vrijeme, od strane
-        akreditovanih institucija. Sarađivala je sa uglednim profesorom Tucakovim koji je ostavio
-        značajan doprinos u farmakologiji na ovim prostorima.
-        Ema je bila poslednji apotekar u porodici Antonioli a radila je u periodu nakon II Svjetskog rada
-        do početka sedamdesetih godina XX vijeka.</p>
-        <video width="90%" height="240" controls>
-            <source src="Danilo1/Izlozba1.mp4" type="video/mp4">
-            
-        </video>
-</div>
-</body>
-</html>
+<body id="top">
+<header><a class="logo" href="#top" aria-label="CNC početna">cnc<span> /</span></a><nav aria-label="Glavna navigacija"><a href="#masina">Mašina</a><a href="#laser">Laser u fokusu</a><a href="#dijelovi">Dijelovi</a></nav><span class="header-note">TEHNOLOGIJA U DETALJU ↗</span></header>
+<main>
+<section class="hero reveal" id="masina"><div class="eyebrow"><span class="dot"></span> CNC LASERSKA TEHNOLOGIJA</div><div class="hero-heading"><h1>Preciznost.<br>U svakom <em>detalju.</em></h1><p class="intro">Od cijele mašine do najmanje komponente. Otkrijte tehnologiju koja ideju pretvara u precizan rez.</p></div><div class="visual"><img src="assets/cnc-machine.jpg" alt="Plavo-bijela CNC laserska mašina sa otvorenim zaštitnim poklopcem" fetchpriority="high"><span class="visual-caption">CNC LASERSKI SISTEM</span><span class="image-index">01 / 03</span></div><div class="hero-bottom"><span>INŽENJERSTVO KOJE SE VIDI.</span><a class="scroll" href="#laser">ISTRAŽITE DETALJE &nbsp; ↓</a></div></section>
+<section class="section" id="laser"><div class="section-head"><span class="section-number">02 / LASER U FOKUSU</span><h2>Tamo gdje<br>nastaje preciznost.</h2><p>Pogled izbliza na lasersku glavu i radnu površinu. Svaki pokret je dio pažljivo usklađenog sistema.</p></div><div class="laser-layout"><div class="visual"><video id="laser-video" autoplay loop muted playsinline preload="auto" aria-label="Krupni kadar laserske glave CNC mašine"><source src="assets/laser-detail.mp4" type="video/mp4"></video><span class="visual-caption">POGLED IZBLIZA / VIDEO</span><button class="play" id="video-toggle" aria-label="Pauziraj video">Ⅱ &nbsp; Pauziraj</button></div><aside class="detail-panel"><span class="cross" aria-hidden="true">⌖</span><div><div class="eyebrow">DETALJ KOJI PRAVI RAZLIKU</div><h3>U središtu<br>svakog reza.</h3><p>Laserska glava, vođice i radni sto — pogledajte kako su povezani ključni elementi mašine.</p></div><div class="tag">LASERSKA GLAVA &nbsp; / &nbsp; KRUPNI KADAR</div></aside></div></section>
+<section class="section parts" id="dijelovi"><div class="section-head"><span class="section-number">03 / POGLED IZNUTRA</span><h2>Cjelina počinje<br>od svakog dijela.</h2><p>Rastavljeni prikaz otkriva slojeve mašine i komponente koje čine jedan povezan sistem.</p></div><div class="visual"><img src="assets/cnc-parts.jpg" alt="CNC mašina u rastavljenom prikazu sa komponentama raspoređenim iznad kućišta" loading="lazy"><span class="visual-caption">RASTAVLJENI PRIKAZ</span><span class="image-index">03 / 03</span></div><div class="parts-notes"><div class="part-note"><span>01</span><div><h3>Kućište i zaštita</h3><p>Spoljašnja struktura i poklopac radnog prostora.</p></div></div><div class="part-note"><span>02</span><div><h3>Laserski sistem</h3><p>Optički i mehanički elementi u središtu mašine.</p></div></div><div class="part-note"><span>03</span><div><h3>Upravljanje i pogon</h3><p>Komponente koje povezuju pokret i kontrolu.</p></div></div></div></section>
+</main><footer><a class="logo" href="#top">cnc<span> /</span></a><p>PRECIZNOST U SVAKOM DETALJU.</p><a href="#top" class="back">Povratak na vrh ↗</a></footer>
+<script>
+const video=document.getElementById('laser-video'),button=document.getElementById('video-toggle');
+function sync(){button.textContent=video.paused?'▶  Pokreni':'Ⅱ  Pauziraj';button.setAttribute('aria-label',video.paused?'Pokreni video':'Pauziraj video')}
+button.addEventListener('click',()=>{if(video.paused)video.play().catch(sync);else video.pause()});video.addEventListener('play',sync);video.addEventListener('pause',sync);
+if(matchMedia('(prefers-reduced-motion: reduce)').matches)video.pause();sync();
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){document.querySelectorAll('nav a').forEach(a=>{const active=a.hash==='#'+entry.target.id;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')})}})},{rootMargin:'-20% 0px -45% 0px'});document.querySelectorAll('main section').forEach(s=>observer.observe(s));
+</script>
+</body></html>
